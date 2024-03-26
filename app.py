@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-const data = [
+data = [
   {
     "id": 1,
     "artist_name": "Drake",
