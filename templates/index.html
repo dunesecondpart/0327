@@ -11,32 +11,18 @@
 <body>
     <main class="container">
         <h1>Concert Events</h1>
+
+        {% for item in data %}
         <article class="event">
             <header>
-                <h2>Drake</h2>
+                <h2>{{data.artist_name}}</h2>
             </header>
             <section>
-                <p>Venue: Scotiabank Arena</p>
-                <p>City: Toronto</p>
-                <p>Date: 2024-05-10</p>
-                <p>Description: Don't miss the Toronto-native rapper, singer, and songwriter Drake as he brings his
-                    electrifying performance to Scotiabank Arena.</p>
-                <p>Ticket Price: $100</p>
+                <p>Venue: {{data.venue}}</p>
             </section>
         </article>
-        <article class="event">
-            <header>
-                <h2>Justin Bieber</h2>
-            </header>
-            <section>
-                <p>Venue: Rogers Arena</p>
-                <p>City: Vancouver</p>
-                <p>Date: 2024-06-15</p>
-                <p>Description: Catch Justin Bieber live in concert at Rogers Arena, Vancouver. Experience the pop
-                    sensation's chart-topping hits and incredible stage presence.</p>
-                <p>Ticket Price: $90</p>
-            </section>
-        </article>
+        {% endfor %}
+
     </main>
 </body>
 
